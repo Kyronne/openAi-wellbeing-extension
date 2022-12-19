@@ -12,5 +12,8 @@
   "action": {
     "default_popup": "index.html",
     "default_title": "Generate wellbeing text"
-  }
+  },  
+  "permissions": ["contextMenus", "tabs", "storage"]
 }
+
+

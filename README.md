@@ -1,3 +1,3 @@
-#OpenAi Wellbeing Extension
+##OpenAi Wellbeing Extension
 
-Building a wellbeing extension using GPT3.
+Building a wellbeing extension for chromium browsers(google chrome, microsoft edge, brave, opera) using GPT3.

@@ -1,6 +1,6 @@
 {
-  "name": "GPT-3 Writer",
-  "description": "Write a blog post in the style of your favorite thinker anywhere!",
+  "name": "Wellbeing Assistant",
+  "description": "Highlight your title text and I'll write something helpful about wellbeing.",
   "version": "1.0",
   "manifest_version": 3,
   "icons": {

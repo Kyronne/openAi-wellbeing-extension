@@ -12,7 +12,10 @@
   "action": {
     "default_popup": "index.html",
     "default_title": "Generate wellbeing text"
-  },  
+  }, 
+    "background": {
+      "service_worker": "scripts/contextMenuServiceWorker.js"
+  },
   "permissions": ["contextMenus", "tabs", "storage"]
 }
 

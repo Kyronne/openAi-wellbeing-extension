@@ -1,7 +1,9 @@
+const generateCompletionAction = async (info) => {}
+
 chrome.runtime.onInstalled.addListener(() => {
     chrome.contextMenus.create({
       id: 'context-run',
-      title: 'Generate wellbeing text',
+      title: 'Generate Wellbeing Text',
       contexts: ['selection'],
     });
   });

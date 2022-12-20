@@ -11,7 +11,7 @@
   },
   "action": {
     "default_popup": "index.html",
-    "default_title": "Generate wellbeing text"
+    "default_title": "Generate Wellbeing Text"
   }, 
     "background": {
       "service_worker": "scripts/contextMenuServiceWorker.js"

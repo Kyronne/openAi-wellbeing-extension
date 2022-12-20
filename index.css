@@ -6,3 +6,7 @@ body {
 #key_entered {
     display: none;
 }
+
+#key_needed_text{
+    font-style: italic;
+}

@@ -9,6 +9,23 @@ const getKey = () => {
   });
 };
 
+const sendMessage = (content) => {
+  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    const activeTab = tabs[0].id;
+
+    chrome.tabs.sendMessage(
+      activeTab,
+      { message: 'inject', content },
+      (response) => {
+        if (response.status === 'failed') {
+          console.log('injection failed.');
+        }
+      }
+    );
+  });
+};
+
+
 const generate = async (prompt) => {
   // Get your API key from storage
   const key = await getKey();

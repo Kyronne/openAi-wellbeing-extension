@@ -53,16 +53,20 @@ const generate = async (prompt) => {
 
 const generateCompletionAction = async (info) => {
     try {
+      sendMessage('generating...');
+      
       const { selectionText } = info;
       const basePromptPrefix = `
         I want you to act as a wellbeing coach, giving advice in a supportive conversational way help the person to be resilient by making this advice achievable and actionable. Take inspiration from Gabor Maté, Marsha P Linehan and Brené Brown in your response where helpful. 
         Advice:
       `;
       const baseCompletion = await generate(`${basePromptPrefix}${selectionText}`);
-      console.log(baseCompletion.text)
+      sendMessage(baseCompletion.text);
 
     } catch (error) {
       console.log(error);
+
+      sendMessage(error.toString());
     }
   };
   

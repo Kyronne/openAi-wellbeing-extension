@@ -25,7 +25,8 @@ splitContent.forEach((content) => {
   // Insert into HTML one at a time
   element.appendChild(p);
 });
-}
+  return true;
+};
 
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.message === 'inject') {
